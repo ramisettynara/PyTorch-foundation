@@ -1,0 +1,21 @@
+[project]
+name = "pytorch-foundation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ramisettynara", email = "ramisetty514@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "torch==2.2.2",
+    "torchaudio==2.2.2",
+    "torchvision==0.17.2",
+]
+
+[project.scripts]
+pytorch-foundation = "pytorch_foundation:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
